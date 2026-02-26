@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculatrice</title>
+    <style>
+        :root{--bg:#f7f7f9;--card:#ffffff;--muted:#6b7280;--accent:#111827;--input:#f1f5f9}
+        html,body{height:100%}
+        body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:24px;margin:0}
+        .card{width:360px;max-width:92vw;padding:28px;border-radius:8px;background:var(--card);box-shadow:0 6px 18px rgba(15,23,42,0.06);text-align:center}
+        h2{margin:0 0 14px;color:var(--accent);font-weight:700}
+        form{display:block}
+        input[type="text"], select{width:100%;padding:12px;border:1px solid #e6e9ef;border-radius:6px;background:var(--input);color:#111827;margin:8px 0;box-sizing:border-box}
+        button{width:100%;padding:10px;border-radius:6px;border:1px solid #cbd5e1;background:#e6e7ea;color:#111827;font-weight:600;cursor:pointer}
+        .result{margin-top:14px;font-weight:700;color:#111827}
+        .note{color:var(--muted);font-size:13px;margin-top:8px}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Calculatrice</h2>
+
+        <form method="post" action="/calculer">
+            <input type="hidden" name="_token" value="sUYT2hGBQ3xhVj7z81UpLP2WSdwanGzqHKG2Z2fA" autocomplete="off">            <input type="text" name="val1" placeholder="Valeur 1" value="">
+            <select name="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="text" name="val2" placeholder="Valeur 2" value="">
+            <button type="submit">OK</button>
+        </form>
+
+            </div>
+</body>
+</html>

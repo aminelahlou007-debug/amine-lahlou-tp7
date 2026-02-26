@@ -1,0 +1,42 @@
+:root {
+    --brand: #0d6efd;
+    --dark: #0b1a2b;
+    --light: #f7f9fc;
+    --muted: #6c757d;
+}
+
+body {
+    background: var(--light);
+}
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e9ecef;
+    padding: 14px 0;
+}
+
+.logo {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 1.1rem;
+}
+
+.nav-links a {
+    margin-left: 16px;
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--brand);
+}
+
+.site-footer {
+    background: #ffffff;
+    border-top: 1px solid #e9ecef;
+    padding: 18px 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
