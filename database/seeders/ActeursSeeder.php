@@ -15,16 +15,16 @@ class ActeursSeeder extends Seeder
                 'nom' => 'Ben',
                 'prenom' => 'Ali',
                 'pays' => 'Maroc',
-                'date_naissance' => '1990-05-10',
-                'tel' => '0600000000',
+                'date_naissance' => '2005-5-10',
+                'tel' => '0647537593',
             ],
             [
                 'id' => 2,
                 'nom' => 'Sara',
                 'prenom' => 'Diaz',
-                'pays' => null,
-                'date_naissance' => null,
-                'tel' => null,
+                'pays' => 'France',
+                'date_naissance' => '1999-8-20',
+                'tel' => '0654321987',
             ],
         ]);
     }

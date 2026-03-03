@@ -10,8 +10,8 @@ return new class extends Migration
     {
         Schema::create('participations', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('films_id');
-            $table->unsignedBigInteger('acteur_id');
+            $table->foreignId('films_id')->constrained('films')->onDelete('cascade');
+            $table->foreignId('acteur_id')->constrained('acteurs')->onDelete('cascade');
             $table->string('role');
             $table->unique(['acteur_id', 'films_id']);
         });

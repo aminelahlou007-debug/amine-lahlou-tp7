@@ -8,7 +8,6 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        // Run seeders in a simple order
         $this->call([
             FilmsSeeder::class,
             ActeursSeeder::class,
