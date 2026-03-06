@@ -7,6 +7,10 @@ Route::get('/', function () {
     return redirect('/films');
 });
 
+Route::get('/test-simple', function () {
+    return 'Server is working!';
+});
+
 Route::get('/films', function () {
     $films = DB::table('films')->get();
     return view('films.index', compact('films'));
